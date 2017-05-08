@@ -1,0 +1,10 @@
+<h1>Product Form</h1>
+
+<%= form_tag ({controller: 'products',
+    action: 'add',
+    method: 'post'}) do %>
+  
+  <%= text_field_tag :product %>
+  <%= submit_tag "Add to Cart" %>
+
+<% end %>
